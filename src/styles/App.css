@@ -1,0 +1,9 @@
+
+.app{
+    width: 100%;
+    flex-flow: column wrap;
+    position: relative;
+    text-align: center;
+}
+
+
