@@ -7,7 +7,6 @@
   justify-content: space-between;
   text-align: center;
   align-items: center;
-  border:1px solid #000;
 }
 
 .app-logo {
@@ -18,14 +17,12 @@
   .app-nav{
     height: 34px;
     width: 309px;
-    border:1px solid #000;
     display: flex;
     justify-content: space-around;
+    /* border:1px solid #000;  */
   }
   
   .app-link {
-    
-
     font-style: normal;
     font-weight: 500;
     font-size: 24px;
@@ -34,13 +31,15 @@
     height: 34px;
     display: flex;
     align-items: flex-end;
-    text-align: right;  
+    text-align: right; 
+    text-decoration: none;
+       /* border:1px solid #000;   */
   }
   .app-accueil{
     left: 0;
     right: 13.95%;
     width: 136px;
-    /* border:1px solid #000; */
+  
   }
   .app-propos{
     /* left: 90.65%; */
@@ -48,5 +47,8 @@
     width: 116px;
     text-decoration: none;
     /* border:1px solid green; */
+  }
+  .active{
+    text-decoration: underline;
   }
   

@@ -1,0 +1,28 @@
+.dropdown-top {
+  margin: 33px 208px 0 208px;
+  height: 47px;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 18px;
+  background: #ff6060;
+  border-radius: 5px;
+  font-size: 24px;
+}
+
+.dropdown-bottom {
+  margin: 0 208px 33px 208px;
+  min-height: 50px;
+  color: #ff6060;
+  padding: 6px 18px;
+  background: #f7f7f7;
+  font-size: 24px;
+}
+
+/* .arrow-down {
+  display: block;
+}
+.arrow-top {
+  display: block;
+} */
