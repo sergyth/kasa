@@ -8,7 +8,7 @@ const Carousel = () => {
   const card = cards.find(card => card.id === cardId)
   const {id, title} =card
   return (
-    <div>
+    <div className="carousel-box">
       {card.pictures.map((picture) => {
         index++
         return (

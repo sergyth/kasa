@@ -1,0 +1,12 @@
+.main-logement{
+    margin: 43px 100px ;
+    width: 100%;
+    border-radius: 25px;
+    min-height: 70dvh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background: #f7f7f7; 
+    border: 5px solid firebrick;
+    position: relative;
+}

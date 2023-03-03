@@ -1,8 +1,16 @@
-.carousel-item{
-   width: 1240px;
+.carousel-box{
    height: 415px;
    border-radius: 25px;
-   position: absolute;
-   top: 0;
-   left: ; 
+   display: flex;
+   justify-content: center;
+   
+}
+.carousel-item{
+   width:840px; 
+   height: 415px;
+   border-radius: 25px;
+   object-fit: cover;
+
+
+   
 }

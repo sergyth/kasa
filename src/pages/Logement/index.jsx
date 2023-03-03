@@ -1,7 +1,8 @@
 import { useParams } from "react-router-dom"
-import Carroussel from "../../components/Carousel"
+import Carousel from "../../components/Carousel"
 import cards from "../../datas/kasa.json"
-//import Link from 'react';
+import '../../styles/Logement.css'
+
 
 const Logement = () => {
   const { cardId } = useParams()
@@ -10,10 +11,12 @@ const Logement = () => {
 
     
 return( 
-    <div className='logement'>
-      <div className='arrow-left'>L</div>
-      <Carroussel pictures={card.pictures}/>
-      <div className="arrow-right">R</div>
+    <div className="main-logement">
+      <div className='logement'>
+        <div className='arrow-left'>L</div>
+        <Carousel pictures={card.pictures}/>
+        <div className="arrow-right">R</div>
+      </div>
     </div>
   )
 }
