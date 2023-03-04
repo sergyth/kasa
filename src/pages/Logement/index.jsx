@@ -2,7 +2,10 @@ import { useParams } from "react-router-dom"
 import Carousel from "../../components/Carousel"
 import cards from "../../datas/kasa.json"
 import "../../styles/Logement.css"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import fontawesome from '@fortawesome/fontawesome'
+import FontAwesomeIcon from '@fortawesome/react-fontawesome';
+import { faChevronLeft, faChevronRight } from '@fortawesome/fontawesome-free-solid'
+fontawesome.library.add(faChevronLeft, faChevronRight);
 
 
 const Logement = () => {

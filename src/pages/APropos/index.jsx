@@ -2,7 +2,7 @@ import Banner from "../../components/Banner"
 import Dropdown from "../../components/Dropdown"
 import banniere from "../../assets/banniere-about.png"
 import "../../styles/Dropdown.css"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+
 
 const dropdown = [
   {
