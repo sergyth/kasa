@@ -1,12 +1,35 @@
 .main-logement{
     margin: 43px 100px ;
-    width: 100%;
     border-radius: 25px;
-    min-height: 70dvh;
+    /* min-height: 70dvh; */
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     background: #f7f7f7; 
-    border: 5px solid firebrick;
+    border: 1px solid firebrick;
     position: relative;
+   
+}
+.logement{
+    position: relative;
+    height: 415px;
+    width: 100%;
+}
+.fa-chevron-left, .fa-chevron-right{
+    position: absolute;
+    font-size: 10rem;
+    color: #fff;
+    z-index: 9999;
+   
+}
+.fa-chevron-left{
+  top: 50%;
+  margin-left: 25px;
+  transform: translateY(-50%);
+}
+.fa-chevron-right{
+  bottom: 50%;
+  right: 0;
+  margin-right: 25px;
+  transform: translateY(50%);
 }

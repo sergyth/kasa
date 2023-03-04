@@ -2,7 +2,7 @@ import "../../styles/Card.css"
 //import Link from "react"
 //import { useParams } from "react-router-dom"
 
-const Card = ({ cover, title }) => {
+const Card = ({ cover, title, id }) => {
   return (
     <div className="card">
       <img

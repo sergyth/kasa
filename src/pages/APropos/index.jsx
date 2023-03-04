@@ -2,6 +2,7 @@ import Banner from "../../components/Banner"
 import Dropdown from "../../components/Dropdown"
 import banniere from "../../assets/banniere-about.png"
 import "../../styles/Dropdown.css"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 const dropdown = [
   {
@@ -27,21 +28,18 @@ const dropdown = [
 ]
 
 const APropos = () => {
-  let items = []
-  dropdown.map((item) => {
-    item = <Dropdown
-      key={item.title}
-      title={item.title}
-      description={item.description}
-    />
-    items.push(item)
-    return items
-  })
-
   return (
     <div className="about">
       <Banner source={banniere} text="" />
-      <ul>{items}</ul>
+      {dropdown.map((item) => {
+        return (
+          <Dropdown
+            key={item.title}
+            title={item.title}
+            description={item.description}
+          />
+        )
+      })}
     </div>
   )
 }
