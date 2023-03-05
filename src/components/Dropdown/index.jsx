@@ -1,6 +1,7 @@
 import "../../styles/Dropdown.css"
 import { useState } from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faChevronUp, faChevronDown } from '@fortawesome/free-solid-svg-icons'
 //utiliser children en lieu et place de description
 const Dropdown = (props) => {
   const [dropdown, updateDropdown] = useState(true)
@@ -9,7 +10,7 @@ const Dropdown = (props) => {
       <div className="dropdown-top">
         <span>{props.title}</span>
         <button className="chevron-down" onClick={() => updateDropdown(false)}>
-        <FontAwesomeIcon icon=" fa-chevron-down" />
+        <FontAwesomeIcon icon={faChevronDown} />
         </button>
       </div>
     </li>
@@ -18,11 +19,11 @@ const Dropdown = (props) => {
       <div className="dropdown-top">
         <span>{props.title}</span>
         <button className="chevron-up" onClick={() => updateDropdown(true)}>
-        <FontAwesomeIcon icon=" fa-chevron-up" />
+        <FontAwesomeIcon icon={faChevronUp} />
         </button>
       </div>
       <div className="dropdown-bottom">
-        <p className="dropdown-description">{props.description}</p>
+        {props.children}
       </div>
     </li>
   )

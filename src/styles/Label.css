@@ -1,0 +1,41 @@
+.label-box
+{
+  display: flex;
+  /* border: 1px solid blue; */
+  width: 50%;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+
+.title{
+  font-size: 1.1rem;
+  height: 2rem;
+  font-weight: 500;
+
+}
+.location{
+  width: 35%;
+
+}
+
+.tags{
+  margin: 1rem 0;
+  display: flex;
+  
+
+}
+.tag{
+  height: 25px;
+  width: 9rem;
+  text-align: center;
+  background: #FF6060;
+  color: #fff;
+  margin-right: 10px;
+  border-radius: 10px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  font-size: .9rem;
+
+}

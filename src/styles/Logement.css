@@ -6,7 +6,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     background: #f7f7f7; 
-    border: 1px solid firebrick;
+    /* border: 1px solid firebrick; */
     position: relative;
    
 }
@@ -32,4 +32,7 @@
   right: 0;
   margin-right: 25px;
   transform: translateY(50%);
+}
+.presentation-wrapper{
+  width: 100%;
 }

@@ -4,6 +4,7 @@ import banniere from "../../assets/banniere-about.png"
 import "../../styles/Dropdown.css"
 
 
+
 const dropdown = [
   {
     title: "Fiabilité",
@@ -36,8 +37,10 @@ const APropos = () => {
           <Dropdown
             key={item.title}
             title={item.title}
-            description={item.description}
-          />
+            
+          >
+            {item.description}
+          </Dropdown>
         )
       })}
     </div>

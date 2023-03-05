@@ -1,23 +1,25 @@
 import { useParams } from "react-router-dom"
-import Carousel from "../../components/Carousel"
 import cards from "../../datas/kasa.json"
+import Carousel from "../../components/Carousel"
+import Presentation from "../../components/Presentation"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons'
 import "../../styles/Logement.css"
-import fontawesome from '@fortawesome/fontawesome'
-import FontAwesomeIcon from '@fortawesome/react-fontawesome';
-import { faChevronLeft, faChevronRight } from '@fortawesome/fontawesome-free-solid'
-fontawesome.library.add(faChevronLeft, faChevronRight);
-
 
 const Logement = () => {
   const { cardId } = useParams()
   const card = cards.find((card) => card.id === cardId)
+  //const {pictures} = card
 
-  return (
+  return  (
     <div className="main-logement">
       <div className="logement">
-        <FontAwesomeIcon icon=" fa-chevron-left" />
+        <FontAwesomeIcon icon={faChevronLeft} />
         <Carousel pictures={card.pictures} />
-        <FontAwesomeIcon icon=" fa-chevron-right" />
+        <FontAwesomeIcon icon={faChevronRight} />
+      </div>
+      <div className="presentation-wrapper">
+        <Presentation/>
       </div>
     </div>
   )
