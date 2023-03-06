@@ -1,0 +1,34 @@
+.rating-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0;
+}
+.profile {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.profile-name {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 1.1rem;
+  font-weight: 500;
+  line-height: 1.2rem;
+  height: 52px;
+  width: 7rem;
+  text-align: right;
+  margin-right: 10px;
+}
+.profile-pic {
+  height: 64px;
+  width: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: #c4c4c4;
+}
+.star {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}

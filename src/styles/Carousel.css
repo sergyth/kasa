@@ -2,10 +2,10 @@
    height: 415px;
    width: 100%;
    border-radius: 25px;
-   display: flex;
+   display: block;
    justify-content: center;
-   border: 1px solid black;
    position: relative;
+   overflow: hidden;
    
 }
 .carousel-item{
@@ -13,10 +13,10 @@
    height: 415px;
    border-radius: 25px;
    object-fit: cover;
-   position: absolute;
+   /* position: absolute;
    top: 0;
    left: 0;
    transform: translate(-50%-50%);
-   z-index: 0;
+   z-index: 0; */
   
 }

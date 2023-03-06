@@ -10,8 +10,8 @@ return(
       {
         tags.map(tag =>
         {index++
-          {return(
-          <span key={`${id}${index}`} className='tag'>{tag}</span>)}}) 
+          return(
+          <span key={`${id}${index}`} className='tag'>{tag}</span>)}) 
       }
     </div>
   </div>

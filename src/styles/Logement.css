@@ -1,38 +1,92 @@
-.main-logement{
-    margin: 43px 100px ;
-    border-radius: 25px;
-    /* min-height: 70dvh; */
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    background: #f7f7f7; 
-    /* border: 1px solid firebrick; */
-    position: relative;
-   
+.main-logement {
+  margin: 43px 100px;
+  border-radius: 25px;
+  /* min-height: 70dvh; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background: #f7f7f7;
+  /* border: 1px solid firebrick; */
+  position: relative;
 }
-.logement{
-    position: relative;
-    height: 415px;
-    width: 100%;
+.logement {
+  position: relative;
+  height: 415px;
+  width: 100%;
 }
-.fa-chevron-left, .fa-chevron-right{
-    position: absolute;
-    font-size: 10rem;
-    color: #fff;
-    z-index: 9999;
-   
+.fa-chevron-left,
+.fa-chevron-right {
+  position: absolute;
+  font-size: 10rem;
+  color: #fff;
+  z-index: 9999;
+  cursor: pointer;
 }
-.fa-chevron-left{
+.fa-chevron-left {
   top: 50%;
   margin-left: 25px;
   transform: translateY(-50%);
 }
-.fa-chevron-right{
+.fa-chevron-right {
   bottom: 50%;
   right: 0;
   margin-right: 25px;
   transform: translateY(50%);
 }
-.presentation-wrapper{
+
+.presentation-wrapper {
   width: 100%;
+}
+.white-star {
+  color: #e3e3e3;
+}
+
+/* dropdown logement */
+.dropdown-logement {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.dropdown-logement .dropdown-wrapper {
+  width: 100%;
+}
+.dropdown-logement .dropdown-wrapper:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.dropdown-logement .dropdown-top {
+  width: 90%;
+  margin: 0;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 18px;
+  background: #ff6060;
+  border-radius: 5px;
+  font-size: 24px;
+}
+
+.dropdown-logement .dropdown-bottom {
+  width: 90%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 50px;
+  color: #ff6060;
+  padding: 6px 18px;
+  background: #f7f7f7;
+  font-size: 24px;
+}
+
+.chevron-up,
+.chevron-down,
+.fa-chevron-up,
+.fa-chevron-down {
+  background: #ff6060;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
 }
