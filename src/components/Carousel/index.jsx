@@ -30,11 +30,11 @@ const Carousel = ({id,title,cards, index ,card}) => {
     <div className="carousel-box">
       <FontAwesomeIcon key={`${id}//${index}`} icon={faChevronLeft} onClick={previous} />
       {cards.map((card) => {
-        return card.pictures.map((picture) => {
-          index++
+        return card.pictures.map((picture,index) => {
+          
           return (
             <img
-              key={`${id}/${index}`}
+              key={`carousel-img-${index}`}
               src={picture}
               alt={`${title}/${index}`}
               className="carousel-item"

@@ -11,29 +11,16 @@ import Dropdown from "../../components/Dropdown"
 const Logement = () => {
   const { cardId } = useParams()
   const card = cards.find((card) => card.id === cardId)
+  
   const {id, title, location, tags } = card
-  const starColor = card.rating
-  const starWhite = 5 - starColor
-  let index = 0
-  let starList = []
-  let starColorIcon = (
-    <FontAwesomeIcon icon={faStar} key={`${id}${index}`} className="star" />
-  )
-  let starWhiteIcon = (
-    <FontAwesomeIcon
-      icon={faStar}
-      key={`${id}-${index}`}
-      className="white-star star"
-    />
-  )
 
-  for (let i = 0; i < starColor; i++) {
-    index++
-    starList.push(starColorIcon)
-  }
-  for (let i = 0; i < starWhite; i++) {
-    index++
-    starList.push(starWhiteIcon)
+  let starList = []
+  for (let i = 0; i < 5; i++) {
+    starList.push( <FontAwesomeIcon
+      icon={faStar}
+      key={`rating-${i}`}
+      className={i > (card.rating - 1)? "white-star star": "star"}
+    />)
   }
 
   return (
@@ -50,8 +37,8 @@ const Logement = () => {
       <ul className="dropdown-logement">
         <Dropdown title="Description">{card.description}</Dropdown>
         <Dropdown title="Equipements">
-          {card.equipments.map((equipement) => (
-            <span key={`${id}${index}`}>{equipement}</span>
+          {card.equipments.map((equipement, index) => (
+            <span key={`equipement-${index}`}>{equipement}</span>
           ))}
         </Dropdown>
       </ul>

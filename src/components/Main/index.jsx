@@ -5,18 +5,18 @@ import "../../styles/Card.css"
 import "../../styles/Main.css"
 
 const Main = () => {
-  return (
-    <div className="main">
+  return (              
+    <main className="main">
       {cards.map((card) => {
         return (
           <div className="card" key={card.id}>
-            <Link to={`/${card.id} `}>
+            <Link to={`logement/${card.id} `}>
               <Card  title={card.title} cover={card.cover} />
             </Link>
           </div>
         )
       })}
-    </div>
+    </main>
   )
 }
 export default Main
