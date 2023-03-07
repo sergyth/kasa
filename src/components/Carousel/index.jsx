@@ -1,5 +1,4 @@
 import "../../styles/Carousel.css"
-import "../../styles/Logement.css"
 import { useState } from "react"
 //import cards from "../../datas/kasa.json"
 // import { useParams } from "react-router-dom"
@@ -10,39 +9,41 @@ import {
   faChevronRight,
 } from "@fortawesome/free-solid-svg-icons"
 
-const Carousel = ({id,title,cards, index ,card}) => {
- 
+const Carousel = ({ title, card }) => {
   const [currentIndex, setCurrentIndex] = useState(0)
-  const carouselItems =[...card.pictures]
-  const previous = ()=>{
-    const isFirstItem = currentIndex === 0
-    const newIndex = isFirstItem? (carouselItems.length - 1) : (currentIndex - 1)
-    setCurrentIndex(newIndex)
+  const slides = card.pictures
+  const length = slides.length
+
+  const previous = () => {
+    setCurrentIndex(currentIndex === 0 ? length - 1 : currentIndex - 1)
   }
-  const next = ()=>{
-    const isLastItem = currentIndex === carouselItems.length - 1
-    const newIndex = isLastItem? (0) : (currentIndex +1 )
-    setCurrentIndex(newIndex)
+  const next = () => {
+    setCurrentIndex(currentIndex === length - 1 ? 0 : currentIndex + 1)
   }
-  
-  
+  console.log(currentIndex)
+
   return (
     <div className="carousel-box">
-      <FontAwesomeIcon key={`${id}//${index}`} icon={faChevronLeft} onClick={previous} />
-      {cards.map((card) => {
-        return card.pictures.map((picture,index) => {
-          
-          return (
-            <img
-              key={`carousel-img-${index}`}
-              src={picture}
-              alt={`${title}/${index}`}
-              className="carousel-item"
-            />
-          )
-        })
+      <FontAwesomeIcon icon={faChevronLeft} onClick={previous} />
+      {slides.map((picture, index) => {
+        return (
+          <div
+            key={index}
+            className={
+              index === currentIndex ? "carousel-item active" : "carousel-item"
+            }
+          >
+            {index === currentIndex && (
+              <img
+                src={picture}
+                alt={`${title}-${index}`}
+                className="picture"
+              />
+            )}
+          </div>
+        )
       })}
-      <FontAwesomeIcon key={`${id}00${index}`} icon={faChevronRight} onClick={next} />
+      <FontAwesomeIcon icon={faChevronRight} onClick={next} />
     </div>
   )
 }

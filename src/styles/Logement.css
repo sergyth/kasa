@@ -14,25 +14,6 @@
   height: 415px;
   width: 100%;
 }
-.fa-chevron-left,
-.fa-chevron-right {
-  position: absolute;
-  font-size: 10rem;
-  color: #fff;
-  z-index: 9999;
-  cursor: pointer;
-}
-.fa-chevron-left {
-  top: 50%;
-  margin-left: 25px;
-  transform: translateY(-50%);
-}
-.fa-chevron-right {
-  bottom: 50%;
-  right: 0;
-  margin-right: 25px;
-  transform: translateY(50%);
-}
 
 .presentation-wrapper {
   width: 100%;

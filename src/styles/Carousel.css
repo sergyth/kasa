@@ -1,22 +1,51 @@
 .carousel-box{
    height: 415px;
-   width: 100%;
+   width: 100%; 
    border-radius: 25px;
-   display: block;
+   margin-bottom: 30px;
+   display: flex;
    justify-content: center;
+   align-items: center;
    position: relative;
-   overflow: hidden;
+
    
 }
+.fa-chevron-left,
+.fa-chevron-right {
+  position: absolute;
+  font-size: 7rem;
+  color: #fff;
+  z-index: 9999;
+  cursor: pointer;
+  user-select: none;
+}
+.fa-chevron-left {
+  top: 50%;
+  left: 2rem;
+  margin-left: 25px;
+  transform: translateY(-50%);
+}
+.fa-chevron-right {
+  bottom: 50%;
+  right:2rem;
+  margin-right: 25px;
+  transform: translateY(50%);
+}
 .carousel-item{
-   width: 100%;
+   opacity: 0;
+   transition: 1s ease-in-out;
+}
+.carousel-item.active{  
+  opacity: 1;
+  transition: 1s ease-in-out;
+  transform: scale(1.01);
+}
+.picture{
+  width: 100%; 
+  display: block;
    height: 415px;
    border-radius: 25px;
    object-fit: cover;
-   /* position: absolute;
-   top: 0;
-   left: 0;
-   transform: translate(-50%-50%);
-   z-index: 0; */
-  
 }
+
+

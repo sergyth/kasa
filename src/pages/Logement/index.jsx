@@ -11,7 +11,6 @@ import Dropdown from "../../components/Dropdown"
 const Logement = () => {
   const { cardId } = useParams()
   const card = cards.find((card) => card.id === cardId)
-  
   const {id, title, location, tags } = card
 
   let starList = []
@@ -26,7 +25,7 @@ const Logement = () => {
   return (
     <div className="main-logement">
       <div className="logement">
-        <Carousel id={id} title={title} cards={cards} card={card} />
+        <Carousel id={id} title={title} card={card}  />
       </div>
       <div className="presentation-wrapper">
         <Label title={title} location={location} tags={tags} />
