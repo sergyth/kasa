@@ -12,13 +12,14 @@
 
 .app-logo-footer {
     height: 40px;
-    width: 122px; 
+    width: 122px;
+     
 }
 
 .app-copyright{
     font-weight: 500;
     font-size: 24px;
-    width: 513px;
+    /* width: 513px; */
     height: 46px;
     padding-top: 40px;
     text-align: center;

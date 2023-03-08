@@ -5,7 +5,7 @@ import Main from "../../components/Main"
 
 const Accueil = () => {
   return (
-    <div >
+    <div className=".accueil" >
       <Banner source={banniere} text='Chez vous, partout et ailleurs'/>
       <Main/>
     </div>

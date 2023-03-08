@@ -15,3 +15,19 @@
     list-style-type: none;
     position: relative;
   }
+
+
+  /* media queries */
+
+  @media screen and (max-width:425px){
+    .main{
+        padding: 1.25rem;
+        margin: 0;
+        width: 100%;
+        flex-direction: column;
+    }
+    .card{
+       margin-bottom: 1.25rem;
+       width: 100%; 
+    }
+  }

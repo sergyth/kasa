@@ -1,12 +1,10 @@
 .app-banniere{
+   
     margin: 0 100px;
     height: 225px;
     color: #fff;
     position: relative;
     background: #f7f7f7;
-   
-     
-   /* border: 1px solid red; */
 }
 
 .app-img-banniere{
@@ -35,6 +33,24 @@
    font-weight: 500;
    line-height: 68px;
    letter-spacing: 0em;
-   
+}
 
+
+/* media querries */
+
+@media screen and (max-width:425px){
+    .app-banniere{
+        
+        margin: 0 1.25rem;
+        height: 6,9rem;
+    } 
+    
+    .app-slogan{
+        width:13.6rem ;
+        margin-left: 1rem;
+        text-align: left;
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+        padding-right:3rem;   
+     }   
 }
