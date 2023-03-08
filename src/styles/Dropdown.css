@@ -1,6 +1,11 @@
+.dropdown-wrapper {
+  list-style-type: none;
+}
+
 .dropdown-top {
   margin: 33px 208px 0 208px;
   height: 47px;
+  min-width: 20.9rem;
   color: #fff;
   display: flex;
   justify-content: space-between;
@@ -8,7 +13,7 @@
   padding: 6px 18px;
   background: #ff6060;
   border-radius: 5px;
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 
 .dropdown-bottom {
@@ -17,13 +22,35 @@
   color: #ff6060;
   padding: 6px 18px;
   background: #f7f7f7;
-  font-size: 24px;
+  font-size: 1.5rem;
 }
-
-.chevron-up, .chevron-down, .fa-chevron-up, .fa-chevron-down{
+.chevron-up,
+.chevron-down {
   background: #ff6060;
   border: none;
- color:white;
- font-size: 1.5rem;
- cursor: pointer;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* media queries */
+
+@media screen and (max-width: 425px) {
+  .dropdown-top {
+    margin: 1.25rem;
+    height: 1.9rem;
+    font-size: 0.81rem;
+  }
+.dropdown-top span{
+  font-size: .81rem;
+}
+  .dropdown-bottom {
+    margin: 1.25rem;
+    font-size: 0.75rem;
+  }
+
+  .chevron-up,
+  .chevron-down {
+    font-size: 0.83rem;
+  }
 }

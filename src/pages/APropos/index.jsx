@@ -1,7 +1,7 @@
 import Banner from "../../components/Banner"
 import Dropdown from "../../components/Dropdown"
 import banniere from "../../assets/banniere-about.png"
-import "../../styles/Dropdown.css"
+import "../../styles/APropos.css"
 
 
 
@@ -31,13 +31,12 @@ const dropdown = [
 const APropos = () => {
   return (
     <div className="about">
-      <Banner source={banniere} text="" />
+      <Banner source={banniere} />
       {dropdown.map((item) => {
         return (
           <Dropdown
             key={item.title}
-            title={item.title}
-            
+            title={item.title}  
           >
             {item.description}
           </Dropdown>

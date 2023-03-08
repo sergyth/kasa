@@ -1,18 +1,17 @@
 .main-logement {
   margin: 43px 100px;
   border-radius: 25px;
-  /* min-height: 70dvh; */
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   background: #f7f7f7;
-  /* border: 1px solid firebrick; */
   position: relative;
 }
 .logement {
   position: relative;
   height: 415px;
   width: 100%;
+  min-width: 21rem;
 }
 
 .presentation-wrapper {
@@ -49,7 +48,7 @@
   border-radius: 5px;
   font-size: 24px;
 }
-.equipement{
+.equipement {
   font-size: 1rem;
 }
 
@@ -62,15 +61,46 @@
   color: #ff6060;
   padding: 6px 18px;
   background: #f7f7f7;
-  font-size: 1rem
+  font-size: 1rem;
 }
 
-.chevron-up,
-.chevron-down,
-.fa-chevron-up,
-.fa-chevron-down {
-  background: #ff6060;
-  border: none;
-  color: white;
-  font-size: 1.5rem;
+
+/* media queries */
+
+
+@media screen and (max-width:425px){
+  .main-logement{
+    padding: 0 1.25rem;
+    margin: 0;
+
+  }
+  .logement{
+margin: 0;
+  }
+  .presentation-wrapper{
+    display: flex;
+    flex-direction: column;
+  }
+  .dropdown-logement {
+    display: flex;
+    flex-direction: column;
+  }
+  .dropdown-logement .dropdown-top{
+    width: 100%;
+    margin-bottom: 1.25rem ;
+  }
+  .dropdown-wrapper{
+    min-width: 21rem;
+  }
+  .chevron-up, .chevron-down{
+    height: .95rem;
+width: .6rem
+  }
+  .dropdown-logement .dropdown-bottom {
+    width: 100%;
+   font-size: 0.75rem;
+  }
+  .equipement{
+    font-size: 0.75rem;
+  }
 }

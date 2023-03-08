@@ -1,6 +1,6 @@
 .carousel-box {
   height: 415px;
-  width: 100%;
+  min-width: 21rem;
   border-radius: 25px;
   margin-bottom: 30px;
   display: block;
@@ -9,11 +9,12 @@
 .fa-chevron-left,
 .fa-chevron-right {
   position: absolute;
-  font-size: 7rem;
   color: #fff;
   z-index: 9999;
   cursor: pointer;
   user-select: none;
+  height: 5rem;
+  width: 2.9rem;
 }
 .noArrow {
   opacity: 0;
@@ -23,6 +24,7 @@
   left: 2rem;
   margin-left: 25px;
   transform: translateY(-50%);
+  
 }
 .fa-chevron-right {
   bottom: 50%;
@@ -30,9 +32,9 @@
   margin-right: 25px;
   transform: translateY(50%);
 }
+
 .carousel-item {
   opacity: 0;
-
   transition: 1s  ease;
 }
 .carousel-item.active {
@@ -44,4 +46,23 @@
   height: 415px;
   border-radius: 25px;
   object-fit: cover;
+}
+
+
+
+/* media queries */
+
+@media screen and (max-width:425px){
+  .fa-chevron-left,
+.fa-chevron-right {
+  height: 1.25rem;
+  width: .75rem;
+
+}
+.fa-chevron-left{
+  left: 1.62rem;
+}
+.fa-chevron-right{
+right: 1.62rem;
+}
 }

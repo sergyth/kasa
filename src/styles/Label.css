@@ -1,7 +1,6 @@
 .label-box
 {
   display: flex;
-  /* border: 1px solid blue; */
   width: 60%;
   flex-direction: column;
   margin: 1rem 0;
@@ -40,4 +39,34 @@
 .presentation-wrapper{
   display: flex;
   justify-content: space-between;
+}
+
+/* media queries */
+
+@media screen and (max-width: 425px){
+  .label-box{
+    width: 100%;
+    margin-bottom: 0;
+  }
+  .title{
+    font-size: 1.1rem;
+  }
+  .location{
+    font-size: 0.9rem;
+    margin: 0;
+    width: 100%;
+  }
+  .tags{
+    width: 100%;
+  }
+  .tag{
+    font-size: 0.62rem;
+    height: 1.12rem;
+width: 5.25rem;
+border-radius: 5px;
+
+  }
+
+  
+
 }

@@ -2,10 +2,10 @@ import "../../styles/Dropdown.css"
 import { useState } from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faChevronUp, faChevronDown } from '@fortawesome/free-solid-svg-icons'
-//utiliser children en lieu et place de description
+
 const Dropdown = (props) => {
   const [dropdown, updateDropdown] = useState(true)
-  return dropdown ? (
+  return dropdown? (
     <li key={props.title} className="dropdown-wrapper">
       <div className="dropdown-top">
         <span>{props.title}</span>

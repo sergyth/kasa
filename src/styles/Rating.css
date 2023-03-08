@@ -32,3 +32,31 @@
   height: 30px;
   margin-right: 10px;
 }
+
+/* media queries */
+
+@media screen and (max-width: 425px) {
+  .rating-wrapper {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin-top: 0;
+  }
+  .rating {
+    display: flex;
+    align-items: center;
+  }
+  .star {
+    height: 15px;
+    width: 15px;
+  }
+  .profile-name {
+    height: 2rem;
+    width: 5.8rem;
+    font-size: 0.75rem;
+  }
+  .profile-pic {
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+  }
+}
