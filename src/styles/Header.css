@@ -52,3 +52,40 @@
     text-decoration: underline;
   }
   
+
+  /****
+  media querries
+  ***/
+
+  @media only screen and (max-width: 425px) {
+    .app-header {
+      
+      width: 100%;
+      height: 108px;
+      margin: 20px;
+      padding: 0;
+    }
+    .app-logo {
+      height: 2.6rem;
+      width: 6rem;
+    }
+    .app-nav{
+      height: 1rem;
+      width: 8rem;
+     
+    }
+    .app-link {
+      font-size: .7rem;
+      line-height: 17.11%;
+      height: 1rem;
+    }
+    .app-accueil{ 
+      width: 5rem;
+    }
+    .app-propos{
+      width: 7rem
+    
+    }
+
+
+  }

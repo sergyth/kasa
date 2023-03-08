@@ -49,6 +49,9 @@
   border-radius: 5px;
   font-size: 24px;
 }
+.equipement{
+  font-size: 1rem;
+}
 
 .dropdown-logement .dropdown-bottom {
   width: 90%;
@@ -59,7 +62,7 @@
   color: #ff6060;
   padding: 6px 18px;
   background: #f7f7f7;
-  font-size: 24px;
+  font-size: 1rem
 }
 
 .chevron-up,

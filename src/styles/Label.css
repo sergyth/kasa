@@ -15,7 +15,7 @@
 }
 .location{
   width: 35%;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 .tags{
@@ -34,12 +34,10 @@
   align-items: center;
   justify-content: center;
   font-weight: 500;
-  font-size: 1rem;
+  font-size: .9rem;
 
 }
 .presentation-wrapper{
   display: flex;
   justify-content: space-between;
-
-
 }

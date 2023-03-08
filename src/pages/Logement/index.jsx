@@ -34,10 +34,10 @@ const Logement = () => {
         </Rating>
       </div>
       <ul className="dropdown-logement">
-        <Dropdown title="Description">{card.description}</Dropdown>
+        <Dropdown title="Description" className='description'>{card.description}</Dropdown>
         <Dropdown title="Equipements">
           {card.equipments.map((equipement, index) => (
-            <span key={index}>{equipement}</span>
+            <span key={index} className='equipement'>{equipement}</span>
           ))}
         </Dropdown>
       </ul>
