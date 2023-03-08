@@ -3,10 +3,10 @@ import cards from "../../datas/kasa.json"
 import Carousel from "../../components/Carousel"
 import Label from "../../components/Label"
 import Rating from "../../components/Rating"
+import Dropdown from "../../components/Dropdown"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {faStar} from "@fortawesome/free-solid-svg-icons"
 import "../../styles/Logement.css"
-import Dropdown from "../../components/Dropdown"
 
 const Logement = () => {
   const { cardId } = useParams()
@@ -37,7 +37,7 @@ const Logement = () => {
         <Dropdown title="Description">{card.description}</Dropdown>
         <Dropdown title="Equipements">
           {card.equipments.map((equipement, index) => (
-            <span key={`equipement-${index}`}>{equipement}</span>
+            <span key={index}>{equipement}</span>
           ))}
         </Dropdown>
       </ul>

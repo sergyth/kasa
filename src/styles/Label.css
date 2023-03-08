@@ -2,27 +2,25 @@
 {
   display: flex;
   /* border: 1px solid blue; */
-  width: 50%;
+  width: 60%;
   flex-direction: column;
   margin: 1rem 0;
 }
 
 .title{
-  font-size: 1.1rem;
-  height: 2rem;
+  font-size: 2rem;
+  height: 3rem;
   font-weight: 500;
 
 }
 .location{
   width: 35%;
-
+  font-size: 1.2rem;
 }
 
 .tags{
   margin: 1rem 0;
   display: flex;
-  
-
 }
 .tag{
   height: 25px;
@@ -36,7 +34,7 @@
   align-items: center;
   justify-content: center;
   font-weight: 500;
-  font-size: .9rem;
+  font-size: 1rem;
 
 }
 .presentation-wrapper{

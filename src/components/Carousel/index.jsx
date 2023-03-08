@@ -1,8 +1,5 @@
 import "../../styles/Carousel.css"
 import { useState } from "react"
-//import cards from "../../datas/kasa.json"
-// import { useParams } from "react-router-dom"
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {
   faChevronLeft,
@@ -20,11 +17,14 @@ const Carousel = ({ title, card }) => {
   const next = () => {
     setCurrentIndex(currentIndex === length - 1 ? 0 : currentIndex + 1)
   }
-  console.log(currentIndex)
 
   return (
     <div className="carousel-box">
-      <FontAwesomeIcon icon={faChevronLeft} onClick={previous} />
+      {
+        length > 1 && (<><FontAwesomeIcon icon={faChevronLeft} onClick={previous} />
+        <FontAwesomeIcon icon={faChevronRight} onClick={next} /></>)
+      }
+
       {slides.map((picture, index) => {
         return (
           <div
@@ -43,7 +43,6 @@ const Carousel = ({ title, card }) => {
           </div>
         )
       })}
-      <FontAwesomeIcon icon={faChevronRight} onClick={next} />
     </div>
   )
 }

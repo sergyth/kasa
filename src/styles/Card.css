@@ -1,14 +1,4 @@
-.card {
-  width: 340px;
-  height: 340px;
-  border-radius: 10px;
-  margin-bottom: 50px;
-  list-style-type: none;
-  position: relative;
-}
-
-.card-background {
-  
+.card-background { 
   object-fit: cover;
 }
 .title-wrapper {

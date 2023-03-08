@@ -1,7 +1,6 @@
 import cards from "../../datas/kasa.json"
 import Card from "../../components/Card"
 import { Link } from "react-router-dom"
-import "../../styles/Card.css"
 import "../../styles/Main.css"
 
 const Main = () => {
@@ -9,7 +8,7 @@ const Main = () => {
     <main className="main">
       {cards.map((card) => {
         return (
-          <div className="card" key={card.id}>
+          <div className="card" key={`card-${card.id}`}>
             <Link to={`logement/${card.id} `}>
               <Card  title={card.title} cover={card.cover} />
             </Link>
