@@ -32,6 +32,9 @@
   height: 30px;
   margin-right: 10px;
 }
+.rating{
+  margin-top: 1rem;
+}
 
 /* media queries */
 
@@ -44,6 +47,7 @@
   .rating {
     display: flex;
     align-items: center;
+    margin: 0;
   }
   .star {
     height: 15px;

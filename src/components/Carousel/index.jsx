@@ -20,10 +20,12 @@ const Carousel = ({ title, card }) => {
 
   return (
     <div className="carousel-box">
-      {
-        length > 1 && (<><FontAwesomeIcon icon={faChevronLeft} onClick={previous} />
-        <FontAwesomeIcon icon={faChevronRight} onClick={next} /></>)
-      }
+      {length > 1 && (
+        <>
+          <FontAwesomeIcon icon={faChevronLeft} onClick={previous} />
+          <FontAwesomeIcon icon={faChevronRight} onClick={next} />
+        </>
+      )}
 
       {slides.map((picture, index) => {
         return (
@@ -40,6 +42,7 @@ const Carousel = ({ title, card }) => {
                 className="picture"
               />
             )}
+            {length > 1 && <span className="numerotation">{`${index + 1}/${length}`}</span>}
           </div>
         )
       })}
