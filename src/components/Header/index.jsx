@@ -1,12 +1,12 @@
 
 import logo from "../../assets/logo.svg"
 import Navbar from '../Navbar'
-import "../../styles/Header.css"
+import "./Header.css"
 
 const Header = () => {
   return (
-    <header className="app-header">
-      <img src={logo} alt="logo du site" className="app-logo" />
+    <header className="header">
+      <img src={logo} alt="logo du site" className="header_logo" />
       <Navbar />
     </header>
   )

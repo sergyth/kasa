@@ -3,12 +3,12 @@
   flex-direction: column;
   margin: 1rem 0;
 }
-.profile {
+.rating_profile {
   display: flex;
   align-items: center;
   justify-content: flex-end;
 }
-.profile-name {
+.rating_profile-name {
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -20,7 +20,7 @@
   text-align: right;
   margin-right: 10px;
 }
-.profile-pic {
+.rating_profile-pic {
   height: 64px;
   width: 64px;
   border-radius: 50%;
@@ -32,7 +32,7 @@
   height: 30px;
   margin-right: 10px;
 }
-.rating{
+.rating_stars{
   margin-top: 1rem;
 }
 
@@ -44,7 +44,7 @@
     justify-content: space-between;
     margin-top: 0;
   }
-  .rating {
+  .rating_stars {
     display: flex;
     align-items: center;
     margin: 0;
@@ -53,12 +53,12 @@
     height: 15px;
     width: 15px;
   }
-  .profile-name {
+  .rating_profile-name {
     height: 2rem;
     width: 5.8rem;
     font-size: 0.75rem;
   }
-  .profile-pic {
+  .rating_profile-pic {
     height: 2rem;
     width: 2rem;
     border-radius: 50%;

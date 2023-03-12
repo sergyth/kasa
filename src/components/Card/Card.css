@@ -1,7 +1,15 @@
-.card-background { 
+.card {
+  width: 340px;
+  height: 340px;
+  border-radius: 10px;
+  margin-bottom: 50px;
+  list-style-type: none;
+  position: relative;
+}
+.card--background { 
   object-fit: cover;
 }
-.title-wrapper {
+.card_title-wrapper {
   height: 92px;
   width: 100%;
   position: absolute;
@@ -14,7 +22,7 @@
   border-radius: 10px;
 }
 
-.card-title {
+.card_title {
   color: #fff;
   margin-top: 30px;
   height: 52px;
@@ -24,4 +32,13 @@
   line-height: 26px;
   font-weight: 500;
   font-style: 18px;
+}
+
+/* media queries */
+
+@media screen and (max-width:425px){
+  .card{
+     margin-bottom: 1.25rem;
+     width: 100%; 
+  }
 }

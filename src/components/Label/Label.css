@@ -6,22 +6,22 @@
   margin: 1rem 0;
 }
 
-.title{
+.label-box_title{
   font-size: 2rem;
   height: 3rem;
   font-weight: 500;
 
 }
-.location{
+.label-box_location{
   width: 35%;
   font-size: 1rem;
 }
 
-.tags{
+.label-box_tags{
   margin: 1rem 0;
   display: flex;
 }
-.tag{
+.label-box_tag{
   height: 25px;
   width: 9rem;
   text-align: center;
@@ -36,10 +36,6 @@
   font-size: .9rem;
 
 }
-.presentation-wrapper{
-  display: flex;
-  justify-content: space-between;
-}
 
 /* media queries */
 
@@ -48,18 +44,18 @@
     width: 100%;
     margin-bottom: 0;
   }
-  .title{
+  .label-box_title{
     font-size: 1.1rem;
   }
-  .location{
+  .label-box_location{
     font-size: 0.9rem;
     margin: 0;
     width: 100%;
   }
-  .tags{
+  .label-box_tags{
     width: 100%;
   }
-  .tag{
+  .label-box_tag{
     font-size: 0.62rem;
     height: 1.12rem;
 width: 5.25rem;

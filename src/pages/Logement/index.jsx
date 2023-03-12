@@ -6,7 +6,7 @@ import Rating from "../../components/Rating"
 import Dropdown from "../../components/Dropdown"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {faStar} from "@fortawesome/free-solid-svg-icons"
-import "../../styles/Logement.css"
+import "./Logement.css"
 
 const Logement = () => {
   const { cardId } = useParams()
@@ -23,21 +23,21 @@ const Logement = () => {
   }
 
   return (
-    <div className="main-logement">
+    <div className="logement-wrapper">
       <div className="logement">
         <Carousel id={id} title={title} card={card}  />
       </div>
-      <div className="presentation-wrapper">
+      <div className="logement_presentation">
         <Label title={title} location={location} tags={tags} />
         <Rating picture={card.host.picture} name={card.host.name}>
           {starList}
         </Rating>
       </div>
-      <ul className="dropdown-logement">
-        <Dropdown title="Description" className='description'>{card.description}</Dropdown>
+      <ul className="logement_dropdown">
+        <Dropdown title="Description" className='logement_description'>{card.description}</Dropdown>
         <Dropdown title="Equipements">
           {card.equipments.map((equipement, index) => (
-            <span key={index} className='equipement'>{equipement}</span>
+            <span key={index} className='logement_equipement'>{equipement}</span>
           ))}
         </Dropdown>
       </ul>

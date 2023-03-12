@@ -1,4 +1,3 @@
-
 import banniere from "../../assets/banniere-home.png"
 import Banner from "../../components/Banner"
 import Main from "../../components/Main"

@@ -1,4 +1,4 @@
-import "../../styles/Carousel.css"
+import "./Carousel.css"
 import { useState } from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {
@@ -32,17 +32,17 @@ const Carousel = ({ title, card }) => {
           <div
             key={index}
             className={
-              index === currentIndex ? "carousel-item active" : "carousel-item"
+              index === currentIndex ? "carousel-box_item carousel-box_item--active" : "carousel-box_item"
             }
           >
             {index === currentIndex && (
               <img
                 src={picture}
                 alt={`${title}-${index}`}
-                className="picture"
+                className="carousel-box_picture"
               />
             )}
-            {length > 1 && <span className="numerotation">{`${index + 1}/${length}`}</span>}
+            {length > 1 && <span className="carousel-box_numerotation">{`${index + 1}/${length}`}</span>}
           </div>
         )
       })}

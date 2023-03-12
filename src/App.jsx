@@ -1,10 +1,11 @@
 
 import { BrowserRouter, Routes, Route } from "react-router-dom"
-import Layout from "../Layout"
-import Accueil from "../Accueil"
-import APropos from "../APropos"
-import Logement from "../Logement"
-import ErrorPage from "../ErrorPage"
+import Layout from "./pages/Layout"
+import Accueil from "./pages/Accueil"
+import APropos from "./pages/APropos"
+import Logement from "./pages/Logement"
+import ErrorPage from "./pages/ErrorPage"
+
 
 function App() {
   return (

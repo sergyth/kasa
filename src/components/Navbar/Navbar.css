@@ -1,27 +1,11 @@
-.app-header {
-  display: flex;
-  width: 100%;
-  height: 108px;
-  margin: 40px 0;
-  padding: 0 100px;
-  justify-content: space-between;
-  text-align: center;
-  align-items: center;
-}
-
-.app-logo {
-    height: 68px;
-    width: 210px;
-  }
-  
-  .app-nav{
+.nav{
     height: 34px;
     width: 309px;
     display: flex;
     justify-content: space-between;
   }
   
-  .app-link {
+  .nav_link {
     font-style: normal;
     font-weight: 500;
     font-size: 24px;
@@ -34,13 +18,13 @@
     text-align: right; 
     text-decoration: none;
   }
-  .app-accueil{
+  .nav_accueil{
     left: 0;
     right: 13.95%;
     width: 136px;
   
   }
-  .app-propos{
+  .nav_about{
     display: flex;
     justify-content: flex-end;
     right: 0%;
@@ -55,35 +39,24 @@
 
   /****************
   ***************
-    media querries
+    media queries
   ***************
   *****************/
 
   @media only screen and (max-width: 425px) {
-    .app-header {
-      height: 2.9rem;
-      padding:1.25rem;
-      
-    }
-    .app-logo {
-      height: 2.9rem;
-      width: 9.1rem;
-    }
-    .app-nav{
+    .nav{
       height: 1rem;
       width: 9.2rem;
     }
-    .app-link {
+    .nav_link {
       font-size: .8rem;
       line-height: 17.11%;
       height: 1.09rem;
     }
-    .app-accueil{ 
+    .nav_accueil{ 
       width: 3.69rem;
     }
-    .app-propos{
+    .nav_about{
       width: 4.4rem; 
     }
-
-
   }

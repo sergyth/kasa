@@ -2,7 +2,7 @@
   list-style-type: none;
 }
 
-.dropdown-top {
+.dropdown_top {
   margin: 33px 208px 0 208px;
   height: 47px;
   min-width: 20.9rem;
@@ -16,7 +16,7 @@
   font-size: 1.5rem;
 }
 
-.dropdown-bottom {
+.dropdown_bottom {
   margin: 0 208px 33px 208px;
   min-height: 50px;
   color: #ff6060;
@@ -36,15 +36,15 @@
 /* media queries */
 
 @media screen and (max-width: 425px) {
-  .dropdown-top {
+  .dropdown_top {
     margin: 1.25rem;
     height: 1.9rem;
     font-size: 0.81rem;
   }
-.dropdown-top span{
+.dropdown_top span{
   font-size: .81rem;
 }
-  .dropdown-bottom {
+  .dropdown_bottom {
     margin: 1.25rem;
     font-size: 0.75rem;
   }
@@ -52,5 +52,8 @@
   .chevron-up,
   .chevron-down {
     font-size: 0.83rem;
+  }
+  .dropdown-wrapper {
+    min-width: 21rem;
   }
 }

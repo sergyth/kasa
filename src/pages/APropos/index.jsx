@@ -1,7 +1,7 @@
 import Banner from "../../components/Banner"
 import Dropdown from "../../components/Dropdown"
 import banniere from "../../assets/banniere-about.png"
-import "../../styles/APropos.css"
+import "./APropos.css"
 
 
 

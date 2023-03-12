@@ -1,7 +1,7 @@
 import cards from "../../datas/kasa.json"
 import Card from "../../components/Card"
 import { Link } from "react-router-dom"
-import "../../styles/Main.css"
+import "./Main.css"
 
 const Main = () => {
   return (              

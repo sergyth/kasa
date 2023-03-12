@@ -1,11 +1,10 @@
-import logo from "../../assets/logo-footer.svg"
-import "../../styles/Footer.css"
+import "./Footer.css"
 
-const Footer = () => {
+const Footer = ({logo}) => {
   return (
-    <div className="app-footer">
-      <img src={logo} alt="logo du site" className="app-logo-footer" />
-      <p className="app-copyright">© 2020 Kasa. All rights reserved</p>
+    <div className="footer">
+      <img src={logo} alt="logo du site" className="footer_logo" />
+      <p className="footer_copyright">© 2020 Kasa. All rights reserved</p>
     </div>
   )
 }

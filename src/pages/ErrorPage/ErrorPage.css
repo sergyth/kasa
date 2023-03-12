@@ -5,7 +5,7 @@
   align-items: center;
   justify-content: center;
 }
-.errorCode {
+.errorPage_code {
   font-size: 288px;
   font-weight: 700;
   line-height: 411px;
@@ -13,7 +13,7 @@
   text-align: center;
   margin-bottom: 66px;
 }
-.errorMessage {
+.errorPage_message {
   font-size: 36px;
   font-weight: 500;
   line-height: 51px;
@@ -22,7 +22,7 @@
 
   margin-bottom: 182px;
 }
-.toHome {
+.errorPage_link{
   margin-bottom: 150px;
   font-size: 18px;
   font-weight: 500;

@@ -1,4 +1,4 @@
-.app-banniere{
+.banniere{
    
     margin: 0 100px;
     height: 225px;
@@ -7,14 +7,14 @@
     background: #f7f7f7;
 }
 
-.app-img-banniere{
+.banniere_img{
     width: 100%;
     height: 223px;
     object-fit: cover;  
     border-radius: 25px;     
 }
 
-.app-img-background{ 
+.banniere--background{ 
     position: absolute;
     top: 0;
     left: 0; 
@@ -23,7 +23,7 @@
     opacity: 0.3; 
 }
 
-.app-slogan{
+.banniere_slogan{
    position: absolute;
    top: 50%;
    transform: translate(0,-50%);
@@ -36,16 +36,16 @@
 }
 
 
-/* media querries */
+/* media queries */
 
 @media screen and (max-width:425px){
-    .app-banniere{
+    .banniere{
         
         margin: 0 1.25rem;
         height: 6,9rem;
     } 
     
-    .app-slogan{
+    .banniere_slogan{
         width:13.6rem ;
         margin-left: 1rem;
         text-align: left;

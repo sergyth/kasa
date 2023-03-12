@@ -1,4 +1,4 @@
-.main-logement {
+.logement-wrapper {
   margin: 43px 100px;
   border-radius: 25px;
   display: flex;
@@ -14,29 +14,31 @@
   min-width: 21rem;
 }
 
-.presentation-wrapper {
+.logement_presentation {
   width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 .white-star {
   color: #e3e3e3;
 }
 
 /* dropdown logement */
-.dropdown-logement {
+.logement_dropdown {
   list-style-type: none;
   display: flex;
   justify-content: space-between;
   width: 100%;
 }
-.dropdown-logement .dropdown-wrapper {
+.logement_dropdown .dropdown-wrapper {
   width: 100%;
 }
-.dropdown-logement .dropdown-wrapper:nth-child(2) {
+.logement_dropdown .dropdown-wrapper:nth-child(2) {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
 }
-.dropdown-logement .dropdown-top {
+.logement_dropdown .dropdown_top {
   width: 90%;
   margin: 0;
   color: #fff;
@@ -48,11 +50,11 @@
   border-radius: 5px;
   font-size: 24px;
 }
-.equipement {
+.logement_equipement {
   font-size: 1rem;
 }
 
-.dropdown-logement .dropdown-bottom {
+.logement_dropdown .dropdown_bottom {
   width: 90%;
   margin: 0;
   display: flex;
@@ -64,43 +66,38 @@
   font-size: 1rem;
 }
 
-
 /* media queries */
 
-
-@media screen and (max-width:425px){
-  .main-logement{
+@media screen and (max-width: 425px) {
+  .logement-wrapper {
     padding: 0 1.25rem;
     margin: 0;
-
   }
-  .logement{
-margin: 0;
+  .logement {
+    margin: 0;
   }
-  .presentation-wrapper{
+  .logement_presentation {
     display: flex;
     flex-direction: column;
   }
-  .dropdown-logement {
+  .logement_dropdown {
     display: flex;
     flex-direction: column;
   }
-  .dropdown-logement .dropdown-top{
+  .logement_dropdown .dropdown_top {
     width: 100%;
-    margin-bottom: 1.25rem ;
+    margin-bottom: 1.25rem;
   }
-  .dropdown-wrapper{
-    min-width: 21rem;
+  .chevron-up,
+  .chevron-down {
+    height: 0.95rem;
+    width: 0.6rem;
   }
-  .chevron-up, .chevron-down{
-    height: .95rem;
-width: .6rem
-  }
-  .dropdown-logement .dropdown-bottom {
+  .logement_dropdown .dropdown_bottom {
     width: 100%;
-   font-size: 0.75rem;
+    font-size: 0.75rem;
   }
-  .equipement{
+  .logement_equipement {
     font-size: 0.75rem;
   }
 }
