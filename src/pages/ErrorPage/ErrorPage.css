@@ -22,10 +22,32 @@
 
   margin-bottom: 182px;
 }
-.errorPage_link{
+.errorPage_link {
   margin-bottom: 150px;
   font-size: 18px;
   font-weight: 500;
   line-height: 26px;
   color: inherit;
+}
+
+/*media queries*/
+
+@media screen and (max-width: 425px) {
+  .errorPage_code {
+    font-size: 6rem;
+    line-height: 8.6rem;
+    margin-top: 13.12rem;
+    margin-bottom: 0.69rem;
+  }
+  .errorPage_message {
+    font-size: 1.12rem;
+    line-height: 1.62rem;
+    text-align: center;
+    margin: 0 3.62rem 8.3rem 3.62rem;
+  }
+  .errorPage_link {
+    font-size: 0.88rem;
+    line-height: 1.25rem;
+    text-align: center;
+  }
 }

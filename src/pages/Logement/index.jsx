@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom"
-import { useEffect, useState } from "react"
+//import { useEffect, useState } from "react"
 import cards from "../../datas/kasa.json"
 import Carousel from "../../components/Carousel"
 import Label from "../../components/Label"
@@ -12,11 +12,12 @@ import ErrorPage from "../ErrorPage"
 
 const Logement = () => {
   const { cardId } = useParams()
-  const [card, setCard] = useState(null)
+  // const [card, setCard] = useState(null)
+  const card = cards.find((card) => card.id === cardId)
 
-  useEffect(() => {
-    loadCard()
-  })
+  // useEffect(() => {
+  //   loadCard()
+  // })
 
   const displayRating = () => {
     let starList = []
@@ -32,15 +33,15 @@ const Logement = () => {
     return starList
   }
 
-  const loadCard = () => {
-    const card = cards.find((card) => card.id === cardId)
-    setCard(card)
-  }
-  if (card === undefined) return <ErrorPage />
+  // const loadCard = () => {
+  //   const card = cards.find((card) => card.id === cardId)
+  //   setCard(card)
+  // }
+  // if (card === undefined) return <ErrorPage />
 
   return (
     <>
-      {card && (
+      {card? (
         <div className="logement-wrapper">
           <div className="logement">
             <Carousel id={card?.id} title={card?.title} card={card} />
@@ -70,7 +71,7 @@ const Logement = () => {
             </Dropdown>
           </ul>
         </div>
-      )}
+      ): <ErrorPage/>}
     </>
   )
 }
