@@ -1,4 +1,4 @@
-import "./Rating.css"
+import "./rating.css"
 
 const Rating = ({ name, picture, children }) => {
   return (

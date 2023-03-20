@@ -1,4 +1,4 @@
-import "./Dropdown.css"
+import "./dropdown.css"
 import { useState } from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faChevronUp, faChevronDown } from '@fortawesome/free-solid-svg-icons'

@@ -1,4 +1,4 @@
-import "./Carousel.css"
+import "./carousel.css"
 import { useState } from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {

@@ -1,4 +1,4 @@
-import "./Label.css"
+import "./label.css"
 const Label = ({ title, location, tags }) => {
   return (
     <div className="label-box">
