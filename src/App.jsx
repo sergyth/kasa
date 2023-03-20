@@ -1,5 +1,5 @@
 
-import { BrowserRouter, Routes, Route } from "react-router-dom"
+import {createBrowserRouter, RouterProvider} from 'react-router-dom'
 import Layout from "./pages/Layout"
 import Accueil from "./pages/Accueil"
 import APropos from "./pages/APropos"
@@ -8,17 +8,21 @@ import ErrorPage from "./pages/ErrorPage"
 
 
 function App() {
-  return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route index element={<Accueil />} />
-          <Route path="logement/:cardId" element={<Logement />} />
-          <Route path="about" element={<APropos />} />
-          <Route path="*" element={<ErrorPage />} />
-        </Route>
-      </Routes>
-    </BrowserRouter>
-  )
+  const router = createBrowserRouter([
+    { 
+      path: "/",
+      element: <Layout/>,
+      errorElement: <ErrorPage/>,
+      children:[
+        {index:true, element:<Accueil/>},
+        { path: "about", element: <APropos/>},
+        {path:"logement/:cardId", element:<Logement/>}        
+      ] 
+    }
+  ])
+
+  return <RouterProvider router={router}/>
+
+  
 }
 export default App
