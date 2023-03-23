@@ -12,12 +12,14 @@ function App() {
     { 
       path: "/",
       element: <Layout/>,
-      errorElement: <ErrorPage/>,
+      errorElement: <ErrorPage/>, 
       children:[
         {index:true, element:<Accueil/>},
         { path: "about", element: <APropos/>},
         {path:"logement/:cardId", element:<Logement/>}        
-      ] 
+      ],
+      
+      
     }
   ])
 

@@ -34,9 +34,19 @@
   font-style: 18px;
 }
 
+
+/*media queries tablet*/
+
+@media screen and (max-width:992px){
+  .card{
+     margin-bottom: 1.25rem;
+     width: 100%; 
+  }
+}
+
 /* media queries */
 
-@media screen and (max-width:425px){
+@media screen and (max-width:768px){
   .card{
      margin-bottom: 1.25rem;
      width: 100%; 

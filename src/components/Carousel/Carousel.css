@@ -35,11 +35,9 @@
 
 .carousel-box_item {
   opacity: 0;
-  transition: 1s  ease;
 }
 .carousel-box_item.carousel-box_item--active {
    opacity: 1;
-  transition: 2s ease-in;
 }
 .carousel-box_picture {
   width: 100%;

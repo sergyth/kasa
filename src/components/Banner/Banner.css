@@ -1,56 +1,65 @@
-.banniere{
-   
-    margin: 0 100px;
-    height: 225px;
-    color: #fff;
-    position: relative;
-    background: #f7f7f7;
+.banniere {
+  margin: 0 100px;
+  height: 225px;
+  color: #fff;
+  position: relative;
+  background: #f7f7f7;
 }
 
-.banniere_img{
-    width: 100%;
-    height: 223px;
-    object-fit: cover;  
-    border-radius: 25px;     
+.banniere_img {
+  width: 100%;
+  height: 223px;
+  object-fit: cover;
+  border-radius: 25px;
 }
 
-.banniere--background{ 
-    position: absolute;
-    top: 0;
-    left: 0; 
-    background: #000000;
-    mix-blend-mode: darken;
-    opacity: 0.3; 
+.banniere--background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #000000;
+  mix-blend-mode: darken;
+  opacity: 0.3;
 }
 
-.banniere_slogan{
-   position: absolute;
-   top: 50%;
-   transform: translate(0,-50%);
-   width: 100%;
-   text-align: center;
-   font-size: 48px;
-   font-weight: 500;
-   line-height: 68px;
-   letter-spacing: 0em;
+.banniere_slogan {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  width: 100%;
+  text-align: center;
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 68px;
+  letter-spacing: 0em;
 }
 
+/****************
+  ***************
+    media queries tablet
+  ***************
+  *****************/
+
+@media only screen and (max-width: 992px) {
+  .banniere {
+    margin: 0 1rem;
+  }
+  .banniere_slogan {
+    font-size: 2rem;
+  }
+}
 
 /* media queries */
 
-@media screen and (max-width:425px){
-    .banniere{
-        
-        margin: 0 1.25rem;
-        height: 6,9rem;
-    } 
-    
-    .banniere_slogan{
-        width:13.6rem ;
-        margin-left: 1rem;
-        text-align: left;
-        font-size: 1.5rem;
-        line-height: 1.5rem;
-        padding-right:3rem;   
-     }   
+@media screen and (max-width: 768px) {
+  .banniere {
+    margin: 0 1.25rem;
+  }
+
+  .banniere_slogan {
+    margin-left: 1rem;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    padding-right: 3rem;
+  }
 }

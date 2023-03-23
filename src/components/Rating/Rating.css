@@ -36,14 +36,23 @@
   margin-top: 1rem;
 }
 
-/* media queries */
+/* media queries tablet */
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 992px) {
   .rating-wrapper {
     flex-direction: row-reverse;
     justify-content: space-between;
+    align-items: center;
     margin-top: 0;
+    padding: 1rem 0;
   }
+}
+
+
+/* media queries mobile*/
+
+@media screen and (max-width: 768px) {
+  
   .rating_stars {
     display: flex;
     align-items: center;

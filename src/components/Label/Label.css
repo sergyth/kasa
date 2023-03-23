@@ -6,14 +6,11 @@
 
 .label-box_title {
   font-size: 2rem;
-  height: 3.2rem;
   font-weight: 500;
-  white-space: nowrap;
-  overflow: hidden;
 }
 .label-box_location {
-  width: 35%;
   font-size: 1rem;
+  margin: 1rem 0;
 }
 
 .label-box_tags {
@@ -21,7 +18,6 @@
   display: flex;
 }
 .label-box_tag {
-  height: 25px;
   width: 9rem;
   text-align: center;
   background: #ff6060;
@@ -33,32 +29,38 @@
   justify-content: center;
   font-weight: 500;
   font-size: 0.9rem;
-  padding: 0 0.5rem;
-  white-space: nowrap;
-  overflow: hidden;
+  padding: 0.5rem;
 }
 
-/* media queries */
+/* media queries tablet */
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 992px) {
+  .label-box_title {
+    font-size: 1.5rem;
+  }
+}
+
+/* media queries mobile */
+
+@media screen and (max-width: 768px) {
   .label-box {
     margin-bottom: 0;
   }
+
   .label-box_title {
     font-size: 1.1rem;
-    margin-right: 2rem;
   }
+
   .label-box_location {
     font-size: 0.9rem;
-    margin: 0;
-    width: 100%;
   }
+
   .label-box_tags {
     width: 100%;
   }
+
   .label-box_tag {
-    font-size: 0.62rem;
-    height: 1.12rem;
+    font-size: 0.62rem; 
     border-radius: 5px;
   }
 }

@@ -20,7 +20,7 @@
   margin: 0 208px 33px 208px;
   min-height: 50px;
   color: #ff6060;
-  padding: 6px 18px;
+  padding:1.88rem 1.12rem .38rem 1.12rem;
   background: #f7f7f7;
   font-size: 1.5rem;
 }
@@ -47,6 +47,7 @@
   .dropdown_bottom {
     margin: 1.25rem;
     font-size: 0.75rem;
+    
   }
 
   .chevron-up,
