@@ -3,8 +3,6 @@ import Dropdown from "../../components/Dropdown"
 import banniere from "../../assets/banniere-about.png"
 import "./aPropos.css"
 
-
-
 const dropdown = [
   {
     title: "Fiabilité",

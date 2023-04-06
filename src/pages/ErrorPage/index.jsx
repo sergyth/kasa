@@ -2,7 +2,6 @@ import { Link } from "react-router-dom"
 import "./errorPage.css"
 
 export default function ErrorPage() {
-
   return (
     <div className="errorPage">
       <p className="errorPage_code">404</p>
