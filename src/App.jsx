@@ -17,14 +17,10 @@ function App() {
         {index:true, element:<Accueil/>},
         { path: "about", element: <APropos/>},
         {path:"logement/:cardId", element:<Logement/>}        
-      ],
-      
-      
+      ]
     }
   ])
 
   return <RouterProvider router={router}/>
-
-  
 }
 export default App
